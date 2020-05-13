@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.jdft2</groupId>
+	<artifactId>jdft2-parent</artifactId>
+	<packaging>pom</packaging>
+	<name>Dynamic Format Transformation Project</name>
+	<version>1.0.0</version>
+
+
+	<modules>
+		<module>modules/jdft2-fixedlength</module>
+		<module>modules/jdft2-delimiter</module>
+	</modules>
+
+	<mailingLists>
+		<mailingList>
+			<name>Development List</name>
+			<subscribe>eummanjin@gmail.com</subscribe>
+			<unsubscribe>eummanjin@gmail.com</unsubscribe>
+			<post>eummanjin@gmail.com</post>
+		</mailingList>
+	</mailingLists>
+	<properties>
+		<!-- Set default encoding to UTF-8 to remove maven complaints -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<!-- Java compiler configuration -->
+		<sourceJavaVersion>1.8</sourceJavaVersion>
+		<targetJavaVersion>1.8</targetJavaVersion>
+
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>apache.snapshots</id>
+			<name>Apache Development Snapshot Repository</name>
+			<url>https://repository.apache.org/content/repositories/snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+
+	<dependencies>
+		<!-- logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.4</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.6.4</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-jcl</artifactId>
+			<version>1.6.4</version>
+			<scope>compile</scope>
+		</dependency>
+
+
+		<!-- junit test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+
+</project>
