@@ -10,6 +10,7 @@
 
 
 	<modules>
+		<module>modules/jdft2-core</module>
 		<module>modules/jdft2-fixedlength</module>
 		<module>modules/jdft2-delimiter</module>
 	</modules>

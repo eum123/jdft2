@@ -9,7 +9,7 @@
 		<version>1.0.0</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
-	<artifactId>jdft2-fixedlength</artifactId>
+	<artifactId>jdft2-core</artifactId>
 	<version>1.0.0</version>
 	<description>fixed length Format Transformation</description>
 	
@@ -26,10 +26,5 @@
 	
 
 	<dependencies>
-		<depedency>
-			<artifactId>jdft2-core</artifactId>
-			<groupId>net.jdft2</groupId>
-			<version>[1.0.0,1.99.99)</version>
-		</depedency>
 	</dependencies>
 </project>
