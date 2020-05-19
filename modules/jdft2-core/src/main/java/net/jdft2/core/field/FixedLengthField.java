@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Field {
+public @interface FixedLengthField {
 	/* 필드 전체 길 */
 	int size() default 0;
 	DataType dataType() default DataType.STRING;
