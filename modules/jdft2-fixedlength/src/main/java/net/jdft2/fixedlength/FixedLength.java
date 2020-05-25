@@ -31,7 +31,6 @@ public class FixedLength {
 				Field field  = objClass.getDeclaredField(x);
 				out.write(getValue(x, obj, field));
 			} catch (Exception e) {
-				// TODO: handle exception
 				throw new RuntimeException(e);
 			}
 		});
@@ -53,6 +52,16 @@ public class FixedLength {
 			throw new Exception("not impelemnt other field type");
 		}
 		
-		
+	}
+	
+	/**
+	 * byte[]을 Object 형태로 변환 
+	 * @param <T>
+	 * @param data
+	 * @param clazz
+	 * @return
+	 */
+	public <T> T unmarshall(byte[] data, T clazz) {
+		return null;
 	}
 }
