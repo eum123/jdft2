@@ -10,6 +10,14 @@ import java.lang.annotation.Target;
 public @interface FixedLengthField {
 	/* 필드 전체 길 */
 	int size() default 0;
+	
+	/* 데이터 type */
 	DataType dataType() default DataType.STRING;
+	
+	/* padding */
+	Padding padding() default Padding.LEFT;
+	
+	/* padding 구분자 */
+	char paddingDelimitor() default ' ';
 	
 }

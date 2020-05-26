@@ -1,5 +1,7 @@
 package net.jdft2.fixedlength.field;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 import net.jdft2.fixedlength.FixedLength;
@@ -16,5 +18,17 @@ public class FixedLengthTest {
 		byte[] fiexed = fixedLength.marshall(field);
 		
 		System.out.println(new String(fiexed));
+	}
+	
+	@Test
+	public void longTest() {
+		FixedLength fixedLength = new FixedLength();
+		LongSampleField field = new LongSampleField();
+		field.setAge("10");
+		field.setHouseCount(2);
+		
+		byte[] fiexed = fixedLength.marshall(field);
+		
+		assertEquals(16, fiexed.length);
 	}
 }
